@@ -1,0 +1,902 @@
+body {
+  font-family: 'Open sans' , sans-serif , 'Verdana'
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.small {
+  max-width: 80%;
+  margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    display: none;
+  }
+
+  .fas.fa-bars {
+    font-size: 25px;
+    margin-top: 4%;
+    margin-left: 90%;
+  }
+
+  .jumbotron a {
+    color: white;
+  }
+
+  header .jumbotron {
+    background-image: url('../img/header.jpg');
+    height: 470px;
+    background-position: top;
+    position: relative;
+  }
+
+  header .titolo {
+     text-align: center;
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50% , -50%);
+     font-weight: 600;
+     color: white;
+     line-height: 40px;
+     width: 95%;
+   }
+
+  header .jumbotron img {
+     height: 35px;
+   }
+
+  header .jumbotron p {
+     font-size: 12px;
+     line-height: 23px;
+     margin-top: 10%;
+     margin-bottom: 10%;
+   }
+
+   #products img {
+     max-width: 225px;
+     display: block;
+     margin: auto;
+   }
+
+   #products .box {
+     text-align: center;
+     background-color: #fafafa;
+     margin: 8% 3%;
+     padding: 6%;
+   }
+
+   #products h2 {
+    padding-bottom: 3%;
+   }
+
+   #products h4 {
+     padding-bottom: 2%;
+   }
+
+   #products a {
+     font-size: 11px;
+     padding-bottom: 3%;
+   }
+
+   #banner {
+     background-image: url('../img/HelbizBanner.jpg');
+     background-size: cover;
+     height: 350px;
+   }
+
+   #banner p {
+     font-size: 11px;
+   }
+
+   #banner [class*="col-"] {
+     text-align: center;
+   }
+
+   #banner .box {
+     text-align: left;
+   }
+
+   #banner img {
+     display: none;
+   }
+
+   #banner .container {
+     max-width: 900px;
+     margin: auto;
+   }
+
+   #banner .box {
+     padding-left: 3%;
+     padding-top: 3%;
+   }
+
+   #us {
+     padding-left: 6%;
+     padding-right: 6%;
+   }
+
+   #us .container {
+     height: 500px;
+     margin-bottom: 5%;
+     background-image: url('../img/scooter-verde.jpg');
+     background-size: cover;
+   }
+
+   #us .box {
+     width: 100%;
+     font-weight: 600;
+     color: black;
+     font-size: 13px;
+     height: 70%;
+     margin-right: 5%;
+     padding-top: 50%;
+     text-align: center;
+     margin-top: 10%;
+   }
+
+   #us h1 {
+     font-size: 35px;
+     margin-bottom: 1%;
+   }
+
+   #us p {
+     margin-bottom: 2%;
+   }
+
+   #us a {
+     color: white;
+   }
+
+   #store .box.right {
+     background-image: url('../img/Cities-1500.jpg');
+     background-size: cover;
+     height: 270px;
+   }
+
+   #store .box.left {
+      background-color: #41566a;
+      margin-bottom: 5%;
+   }
+
+   #store img  {
+     max-height: 150px;
+     display: block;
+     margin: auto;
+   }
+
+   #store .box {
+     margin-top: 5%;
+     margin-bottom: 10%;
+     color: white;
+     text-align: center;
+     padding-top: 6%;
+     margin-left: 6%;
+     margin-right: 6%;
+   }
+
+   #store h3, p {
+     margin-bottom: 3%;
+   }
+
+   #store p {
+     font-size: 14px;
+   }
+
+   #store a {
+     color: white;
+   }
+
+   #social {
+     background-image: url('../img/Social-Banner.jpg');
+     background-size: cover;
+     height: 350px;
+     margin-bottom: 4%;
+     margin-top: 1%;
+     position: relative;
+   }
+
+   #social li {
+     display: inline-block;
+     padding: 6% 3.5%;
+   }
+
+   #social i {
+     color: black;
+     font-size: 25px;
+   }
+
+   #social .content {
+     text-align: center;
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50% , -50%);
+     padding: 3% 7.7%;
+     background-color: white;
+   }
+
+   footer {
+     background-color: black;
+     color: white;
+   }
+
+   footer .container.small {
+     padding-top: 5%;
+     padding-bottom: 5%;
+   }
+
+   footer h5 {
+     margin-bottom: 2%;
+   }
+
+   footer ul {
+     padding-bottom: 15%;
+   }
+
+   footer li {
+     line-height: 150%;
+   }
+
+   footer a {
+     color: grey;
+     font-size: 11px;
+   }
+
+   footer img {
+     padding-top: 10%;
+     padding-bottom: 15%;
+   }
+
+   footer .container.small.last li {
+     display: inline;
+     padding: 0 2%;
+   }
+
+   footer .container.small.last a {
+     color: white;
+   }
+
+   footer .container.small.last {
+     padding-top: 3%;
+     padding-bottom: 3%;
+   }
+
+   footer .container.small.last i {
+     font-size: 15px;
+   }
+
+   footer .container.app {
+     text-align: center;
+     margin-top: 2%;
+   }
+
+   footer .container.app img {
+     padding-top: 0;
+     padding-bottom: 0;
+   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  nav {
+    height: 50px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  header {
+    background-color: #fafafa;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .jumbotron i {
+    display: none;
+  }
+
+  .fas.fa-bars {
+    font-size: 20px;
+    margin-top: 4%;
+  }
+
+  nav [class*="col-"] {
+    height: 100%;
+  }
+
+  nav .col-md-6.burger {
+    text-align: right;
+    float: right;
+  }
+
+  header .col-md-6.burger a {
+    color: black;
+  }
+
+  nav img {
+    padding-left: 5%;
+    margin-top: 4%;
+  }
+
+  header .jumbotron {
+    background-image: url('../img/header.jpg');
+    background-size: cover;
+    height: 470px;
+    position: relative;
+  }
+
+  header .titolo {
+     text-align: center;
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50% , -50%);
+     font-weight: 600;
+     color: white;
+     line-height: 50px;
+   }
+
+  header .jumbotron img {
+     height: 35px;
+   }
+
+  header .jumbotron p {
+     font-size: 12px;
+   }
+
+   #products img {
+     max-width: 350px;
+     display: block;
+     margin: auto;
+   }
+
+   #products .box {
+     text-align: center;
+     background-color: #fafafa;
+     margin: 8% 3%;
+     padding: 6%;
+   }
+
+   #products h2 {
+    padding-bottom: 3%;
+   }
+
+   #products h4 {
+     padding-bottom: 2%;
+   }
+
+
+   #products a {
+     font-size: 11px;
+     padding-bottom: 3%;
+   }
+
+   #banner {
+     background-image: url('../img/HelbizBanner.jpg');
+     background-size: cover;
+     height: 350px;
+   }
+
+   #banner p {
+     font-size: 11px;
+   }
+
+   #banner [class*="col-"] {
+     text-align: center;
+   }
+
+   #banner .box {
+     text-align: left;
+     margin-top: 130%;
+     padding: 20%;
+   }
+
+   #banner img {
+     max-height: 500px;
+     margin-top: 35%;
+   }
+
+   #banner .container {
+     max-width: 900px;
+     margin: auto;
+   }
+
+   #us {
+     padding-left: 3%;
+     padding-right: 3%;
+   }
+
+   #us .container {
+     background-image: url('../img/scooter-verde.jpg');
+     background-size: cover;
+     height: 500px;
+     margin-top: 250px;
+     margin-bottom: 2%;
+   }
+
+   #us .box {
+     max-width: 25%;
+     font-weight: 600;
+     color: white;
+     font-size: 13px;
+     text-align: center;
+     float: right;
+     margin-right: 12.5%;
+     height: 70%;
+     padding-top: 15%;
+     margin-top: 10%;
+   }
+
+   #us h1 {
+     font-size: 35px;
+     margin-bottom: 7%;
+   }
+
+   #us p {
+     margin-bottom: 5%;
+   }
+
+   #us a {
+     color: white;
+   }
+
+   #store .container {
+     max-height: 500px;
+   }
+
+   #store .box.right {
+     background-image: url('../img/Cities-1500.jpg');
+     background-size: cover;
+     height: 310px;
+     margin-left: 5%;
+     margin-right: 5%;
+   }
+
+   #store .box.left {
+      background-color: #41566a;
+      margin-right: 5%;
+      margin-left: 5%;
+   }
+
+   #store img  {
+     max-height: 200px;
+     display: block;
+     margin: auto;
+   }
+
+   #store .box {
+     margin-top: 5%;
+     margin-bottom: 10%;
+     color: white;
+     text-align: center;
+     padding-top: 6%;
+     padding-right: 6%;
+     padding-left: 6%;
+     height: 100%;
+   }
+
+   #store h3, p {
+     margin-bottom: 3%;
+   }
+
+   #store p {
+     font-size: 14px;
+   }
+
+   #store a {
+     color: white;
+   }
+
+   #social {
+     background-image: url('../img/Social-Banner.jpg');
+     background-size: cover;
+     height: 350px;
+     margin-bottom: 4%;
+     margin-top: 1%;
+     position: relative;
+   }
+
+   #social li {
+     display: inline-block;
+     padding: 6% 3.5%;
+   }
+
+   #social i {
+     color: black;
+     font-size: 25px;
+   }
+
+   #social .content {
+     text-align: center;
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50% , -50%);
+     padding: 3% 7.7%;
+     background-color: white;
+   }
+
+   footer {
+     height: 600px;
+     background-color: black;
+     color: white;
+   }
+
+   footer .container.small {
+     padding-top: 5%;
+     padding-bottom: 5%;
+   }
+
+   footer h5 {
+     margin-bottom: 2%;
+   }
+
+   footer li {
+     line-height: 150%;
+   }
+
+   footer a {
+     color: grey;
+     font-size: 11px;
+   }
+
+   footer .container.small {
+     border-bottom: 0.2px solid grey;
+   }
+
+   footer .container.small.last li {
+     display: inline;
+     padding: 0 2%;
+   }
+
+   footer .container.small.last a {
+     color: white;
+   }
+
+   footer .container.small.last {
+     padding-top: 3%;
+     padding-bottom: 3%;
+   }
+
+   footer .container.small.last i {
+     font-size: 15px;
+   }
+
+   footer .container.app {
+     text-align: center;
+     margin-top: 2%;
+   }
+
+}
+
+@media screen and (min-width: 992px) {
+  nav {
+    height: 70px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  header .fas.fa-bars {
+    display: none;
+  }
+
+  .jumbotron i {
+    display: none;
+  }
+
+  header {
+    background-color: #fafafa;
+  }
+
+  nav [class*="col-"] {
+    height: 100%;
+  }
+
+  nav a {
+    color: black;
+    line-height: 70px;
+  }
+
+  nav li img {
+    width: 20px;
+    height: 15px;
+  }
+
+  nav li:nth-child(7) {
+    padding-right: 4%;
+  }
+
+  nav li {
+    display: inline-block;
+    padding: 0 1%;
+  }
+
+  .logo {
+    height: 100%;
+    line-height: 80px;
+  }
+
+  nav .logo img {
+    padding-left: 5%;
+  }
+
+  nav ul {
+    text-align: right;
+  }
+
+  header .jumbotron {
+    background-image: url('../img/header.jpg');
+    background-size: cover;
+    height: 470px;
+    position: relative;
+  }
+
+  header .titolo {
+     text-align: center;
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50% , -50%);
+     font-weight: 600;
+     color: white;
+     line-height: 50px;
+   }
+
+  header .jumbotron img {
+     height: 35px;
+   }
+
+  header .jumbotron p {
+     font-size: 12px;
+   }
+
+   #products img {
+     max-width: 350px;
+     display: block;
+     margin-left: 18%;
+   }
+
+   #products .box {
+     text-align: center;
+     background-color: #fafafa;
+     margin: 8% 3%;
+     padding: 6%;
+   }
+
+   #products h2 {
+    padding-bottom: 3%;
+   }
+
+   #products h4 {
+     padding-bottom: 2%;
+   }
+
+
+   #products a {
+     font-size: 11px;
+     padding-bottom: 3%;
+   }
+
+   #banner {
+     background-image: url('../img/HelbizBanner.jpg');
+     background-size: cover;
+     height: 350px;
+   }
+
+   #banner p {
+     font-size: 11px;
+   }
+
+   #banner [class*="col-"] {
+     text-align: center;
+   }
+
+   #banner .box {
+     text-align: left;
+     margin-top: 130%;
+     padding: 20%;
+   }
+
+   #banner img {
+     max-height: 500px;
+     margin-top: 35%;
+   }
+
+   #banner .container {
+     max-width: 900px;
+     margin: auto;
+   }
+
+   #us {
+     padding-left: 3%;
+     padding-right: 3%;
+   }
+
+   #us .container {
+     background-image: url('../img/scooter-verde.jpg');
+     background-size: cover;
+     height: 500px;
+     margin-top: 250px;
+     margin-bottom: 2%;
+   }
+
+   #us .box {
+     max-width: 25%;
+     font-weight: 600;
+     color: white;
+     font-size: 13px;
+     text-align: center;
+     float: right;
+     margin-right: 12.5%;
+     height: 70%;
+     padding-top: 15%;
+   }
+
+   #us h1 {
+     font-size: 35px;
+     margin-bottom: 7%;
+   }
+
+   #us p {
+     margin-bottom: 5%;
+   }
+
+   #us a {
+     color: white;
+   }
+
+   #store {
+     padding-left: 3%;
+     padding-right: 3%;
+   }
+
+   #store .container {
+     max-height: 500px;
+   }
+
+   #store .box.right {
+     background-image: url('../img/Cities-1500.jpg');
+     background-size: cover;
+     margin-left: 5%;
+   }
+
+   #store .box.left {
+      background-color: #41566a;
+      margin-right: 5%;
+   }
+
+   #store img  {
+     max-height: 200px;
+     display: block;
+     margin: auto;
+   }
+
+   #store .box.right {
+     background-image: url('../img/Cities-1500.jpg');
+     background-size: cover;
+     margin-left: 5%;
+     height: 431px;
+   }
+
+   #store .box.left {
+      background-color: #41566a;
+      margin-right: 5%;
+   }
+
+   #store img  {
+     max-height: 300px;
+     display: block;
+     margin: auto;
+   }
+
+    #store .box {
+     margin-top: 5%;
+     margin-bottom: 10%;
+     color: white;
+     text-align: center;
+     padding-left: 6%;
+     padding-top: 6%;
+     padding-right: 6%;
+     height: 100%;
+   }
+
+   #store h3, p {
+     margin-bottom: 3%;
+   }
+
+   #store p {
+     font-size: 14px;
+   }
+
+   #store a {
+     color: white;
+   }
+
+   #social {
+     background-image: url('../img/Social-Banner.jpg');
+     background-size: cover;
+     height: 350px;
+     margin-bottom: 4%;
+     margin-top: 1%;
+     position: relative;
+   }
+
+   #social li {
+     display: inline-block;
+     padding: 6% 3.5%;
+   }
+
+   #social i {
+     color: black;
+     font-size: 25px;
+   }
+
+   #social .content {
+     text-align: center;
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50% , -50%);
+     padding: 3% 7.7%;
+     background-color: white;
+   }
+
+   footer {
+     height: 600px;
+     background-color: black;
+     color: white;
+   }
+
+   footer .container.small {
+     padding-top: 5%;
+     padding-bottom: 5%;
+   }
+
+   footer h5 {
+     margin-bottom: 2%;
+   }
+
+   footer li {
+     line-height: 150%;
+   }
+
+   footer a {
+     color: grey;
+     font-size: 11px;
+   }
+
+   footer .container.small {
+     border-bottom: 0.2px solid grey;
+   }
+
+   footer .container.small.last li {
+     display: inline;
+     padding: 0 2%;
+   }
+
+   footer .container.small.last a {
+     color: white;
+   }
+
+   footer .container.small.last {
+     padding-top: 3%;
+     padding-bottom: 3%;
+   }
+
+   footer .container.small.last i {
+     font-size: 15px;
+   }
+
+   footer .container.app {
+     text-align: center;
+     margin-top: 2%;
+   }
+}
