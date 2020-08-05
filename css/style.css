@@ -34,6 +34,7 @@ li {
     background-image: url('../img/header.jpg');
     height: 470px;
     background-position: top;
+    background-size: cover;
     position: relative;
   }
 
@@ -432,7 +433,6 @@ li {
      margin-right: 12.5%;
      height: 70%;
      padding-top: 15%;
-     margin-top: 10%;
    }
 
    #us h1 {
@@ -445,7 +445,7 @@ li {
    }
 
    #us a {
-     color: white;
+     color: black;
    }
 
    #store .container {
@@ -525,7 +525,6 @@ li {
    }
 
    footer {
-     height: 600px;
      background-color: black;
      color: white;
    }
@@ -596,7 +595,7 @@ li {
     background-color: #fafafa;
   }
 
-  nav [class*="col-"] {
+    nav [class*="col-"] {
     height: 100%;
   }
 
